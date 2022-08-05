@@ -3,6 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CSS Intro</title>
+    <link rel="stylesheet" href="index.css" />
     <!-- Exercise 1: Add a link element with a href attribute that links your external css file to this document  -->
   </head>
 
@@ -10,14 +11,14 @@
     <header>
       <nav>
         <ul>
-          <li>
-            <a href="/">Home</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/">Home</a>
           </li>
-          <li>
-            <a href="/about">About</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/about">About</a>
           </li>
-          <li>
-            <a href="/projects">Projects</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/projects">Projects</a>
           </li>
         </ul>
       </nav>
@@ -25,21 +26,47 @@
 
     <main>
       <section>
-        <h1>Main Heading</h1>
-        <img src="./images/example.png" alt="Author Headshot" />
-        <p>Author.. Bio...</p>
+        <h1 id="title">Main Heading</h1>
+        <img id="avatar" src="./images/example.png" alt="Author Headshot" />
+        <p class="author">Author.. Bio...</p>
       </section>
       <article>
         <section>
-          <h2>Sub Heading</h2>
-          <p>Lorem ipsum...</p>
+          <h2 id="sub-1">Sub Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            tristique dui id sodales vestibulum. Interdum et malesuada fames ac
+            ante ipsum primis in faucibus. Nullam libero purus, vulputate quis
+            posuere id, accumsan nec nunc. Etiam elementum quam diam, at
+            vestibulum nisi facilisis efficitur. Ut in est tristique, auctor
+            velit ut, bibendum ex. Maecenas nec turpis odio. Praesent pulvinar,
+            ante et convallis eleifend, sem sem ullamcorper lectus, ac vulputate
+            magna nulla rhoncus sapien. Duis venenatis ante nec laoreet tempor.
+          </p>
         </section>
-        <section>
-          <h2>Sub Heading</h2>
-          <p>Lorem ipsum...</p>
+        <section #>
+          <h2 id="sub-2">Sub Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et
+            augue mauris. Sed ac vehicula turpis. Nullam accumsan suscipit odio,
+            ac molestie justo rutrum id. Proin posuere iaculis diam ac
+            fermentum. Morbi eu cursus lacus, at vestibulum est. Nullam sed
+            facilisis est, et sollicitudin mi. Ut semper leo feugiat velit
+            sodales gravida. Pellentesque vulputate quis tortor eget efficitur.
+          </p>
           <div>
-            <h3>Another Sub Heading</h3>
-            <p>Lorem ipsum...</p>
+            <h3 id="sub-3">Another Sub Heading</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum congue laoreet lobortis. Aenean faucibus, lectus nec
+              semper euismod, metus justo eleifend mi, nec interdum metus magna
+              et diam. Fusce efficitur sapien vel quam lacinia porta. Etiam
+              dignissim, enim in condimentum aliquam, eros nulla dictum diam, a
+              tempus diam ex et mauris. Duis ut arcu diam. Morbi in varius
+              turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nulla in laoreet leo. Etiam et ipsum vel diam consequat dapibus
+              vel et risus. Etiam tempus nibh a mauris pulvinar porttitor.
+            </p>
           </div>
         </section>
       </article>
@@ -48,18 +75,18 @@
     <footer>
       <nav>
         <ul>
-          <li>
-            <a href="/privacy">Privacy Policy</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/privacy">Privacy Policy</a>
           </li>
-          <li>
-            <a href="/terms">Terms and Conditions</a>
+          <li class="d-inline">
+            <a class="nav-link" href="/terms">Terms and Conditions</a>
           </li>
         </ul>
       </nav>
 
       <div>
-        <p>Powered by 🕯️</p>
-        <p>&copy; TrueCoders 2021-24</p>
+        <p class="powered-by">Powered by 🕯️</p>
+        <p class="copyright">&copy; TrueCoders 2021-24</p>
       </div>
     </footer>
   </body>
